@@ -2,7 +2,7 @@ import pygame
 import sys
 from components.player import Player
 from components.ball import Ball
-from components.settings import INITIAL_BALL_SPEED_Y, BALL_SPEED_INCREASE_AMOUNT, BALL_SPEED_INCREASE_INTERVAL, BALL_SPAWN_INTERVAL, GAME_DURATION, PREPARATION_TIME
+from components.settings import PLAYER_SPEED, INITIAL_BALL_SPEED_Y, BALL_SPEED_INCREASE_AMOUNT, BALL_SPEED_INCREASE_INTERVAL, BALL_SPAWN_INTERVAL, GAME_DURATION, PREPARATION_TIME
 from components.score import Score
 import time
 import random
@@ -24,7 +24,7 @@ font = pygame.font.Font(None, font_size)
 
 def reset_game():
     global player, balls, score, ball_speed_y, last_ball_time, last_speed_increase_time, start_time, preparation_start_time, countdown_timer, game_started
-    player = Player(x=width // 2, y=height - 50, width=90, height=25, color=(255, 0, 0), speed=5)
+    player = Player(x=width // 2, y=height - 50, width=90, height=25, color=(255, 0, 0), speed=PLAYER_SPEED)
     balls = []
     score = Score(x=width - 150, y=10, font_size=font_size, color=(255, 255, 255))
     ball_speed_y = INITIAL_BALL_SPEED_Y

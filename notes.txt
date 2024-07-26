@@ -1,0 +1,12 @@
+Hyperparameters:
+GAMMA = 0.99 # determines importance of future rewards
+BATCH_SIZE = 64 # num of samples drawn from memory
+LEARNING_RATE = 0.001
+MEMORY_SIZE = 10000
+EPSILON_DECAY = 0.995 # prob. of choosing a random action
+MIN_EPSILON = 0.01
+NUM_EPISODES = 1000
+
+
+run train
+run play

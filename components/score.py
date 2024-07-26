@@ -1,5 +1,3 @@
-# components/score.py
-
 import pygame
 
 class Score:
