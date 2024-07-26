@@ -1,0 +1,2 @@
+black_screen = 0, 0, 0
+white_screen = 250, 250, 250
